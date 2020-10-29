@@ -14,6 +14,7 @@ void loop() {
   Serial.println(distance);
   if (distance > 10) {
     timer++;
+    Serial.println("plus 1")
     delay(1000);
     if (timer >= 10){
       digitalWrite(13,HIGH);
